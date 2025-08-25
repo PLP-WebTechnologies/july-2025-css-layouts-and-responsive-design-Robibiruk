@@ -135,31 +135,7 @@ h1, h2, h3 {
   background-size: cover;
 }
 
-/* Media Queries */
-
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  nav a {
-    font-size: 18px;
-    align-items: center;
-    gap: 10px;
-  }
-  nav a:last-child {
-    border-bottom: none;
-
-  }
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-  img, video {
-    max-width: 100%;
-    height: auto;
-  }
-}
+/* Hide default list markers */
 
 ::marker {
   display: none;
@@ -317,4 +293,30 @@ footer {
   margin-top: 20px;
   text-align: center;
   font-size: 14px;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  nav a {
+    font-size: 18px;
+    align-items: center;
+    gap: 10px;
+  }
+  nav a:last-child {
+    border-bottom: none;
+
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
 }
