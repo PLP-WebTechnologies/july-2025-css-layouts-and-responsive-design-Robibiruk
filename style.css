@@ -7,6 +7,7 @@ body {
 }
 
 /* Basic reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +68,7 @@ nav a {
 
 
 /* Headings */
+
 h1, h2, h3 {
   margin: 15px 0;
   color: #1e3a5f; /* blue for headings */
@@ -213,6 +215,8 @@ form {
   margin-top: 10px;
 }
 
+/* Fieldset */
+
 fieldset {
   border: 1px solid #1e3a5f;
   margin-bottom: 10px;
@@ -220,10 +224,14 @@ fieldset {
   border-radius: 6px;
 }
 
+/* Legend */
+
 legend {
   font-weight: bold;
   color: #1e3a5f;
 }
+
+/* Inputs */
 
 input, select, textarea {
   display: block;
