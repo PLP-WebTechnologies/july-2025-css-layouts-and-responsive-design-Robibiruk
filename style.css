@@ -75,14 +75,19 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.special-desserts {
+  margin-top: 20px;
+  text-align: center;
+}
+
 /* Videos */
 
 .videos {
   text-align: center;
   width: 100%;
   max-width: 800px;
-  margin: 20px auto;
-  min-width: 500px;
+  margin: auto;
+  overflow: auto;
 }
 
 
@@ -154,6 +159,10 @@ h1, h2, h3 {
     max-width: 100%;
     height: auto;
   }
+}
+
+::marker {
+  display: none;
 }
 
 /* Sections */
@@ -252,6 +261,52 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #16314b;
+}
+
+input:read-only {
+  background-color: red;
+  color: yellow;
+}
+
+input:focus {
+  border-color: #1e3a5f;
+  background-color: white;
+}
+
+input:invalid {
+  background-color: rgba(182, 49, 49, 0.685);
+  color: black;
+}
+
+input:valid {
+  background-color: rgba(49, 182, 49, 0.685);
+  color: black;
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 5px green;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: black; /* Replace with your desired color */
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: #1e3a5f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #16314b;
+}
+input[type="radio"]:checked {
+  box-shadow: 0 0 5px green;
 }
 
 /* Footer */
